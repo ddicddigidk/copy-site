@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 복사 도구</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>교육기관 웹 사이트 만들기 메뉴얼</h1>
+
+        <div class="items-container">
+            <!-- 항목 1 -->
+            <div class="item">
+                <div class="item-title">rules</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(0)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(0)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-0">
+---
+description: Education service website rules for a 2026 startup focused on advanced industry education and career readiness
+alwaysApply: true
+---
+
+# Project Goal
+Build a clean, trustworthy education service website for a 2026 startup.The site must balance:
+- 50% advanced industry education
+- 50% career readiness education
+
+# Business Focus
+Advanced industry education includes:
+- Semiconductor
+- Display
+- AI
+- Secondary battery
+
+Career readiness includes:
+- Interview
+- Self-introduction letter
+- Resume
+- AI interview
+- Portfolio
+
+Additional services:
+- Instructor supply
+- Lectures and keynote talks
+- Corporate/institutional commissioned training
+- Education program planning and operations
+
+# Brand Tone
+- Professional
+- Clean
+- Readable
+- Trustworthy
+- Education institution feel
+- Not flashy
+- Not overly promotional
+
+# Content Rules
+- Write all UI copy in Korean
+- Keep copy concise and structured
+- Avoid exaggerated marketing claims
+- Avoid "best", "perfect", "guaranteed success" style language
+- Maintain visible balance between advanced-industry education and career-readiness education
+- Keep company introduction suitable for a 2026 newly founded company
+- Use placeholders for:
+  - [기업명]
+  - [대표자명]
+  - [연락처]
+  - [이메일]
+  - [주소]
+
+# UX Rules
+- Prioritize readability over visual effects
+- Use clear section hierarchy
+- Keep enough whitespace
+- Use clear CTA buttons
+- Mobile responsive by default
+- Education service and B2B-friendly layout
+- Inquiry conversion is more important than decorative interactions
+
+# Required Pages
+- Home
+- 교육분야
+- 취업역량강화
+- 강사진·강연
+- 기업·기관 위탁교육
+- 교육과정
+- 자료실 또는 인사이트
+- 기업소개
+- 문의하기
+
+# Home Page Required Sections
+- Hero banner
+- Core services summary
+- Advanced industry education section
+- Career readiness section
+- Corporate training / lecture section
+- Differentiators
+- Process section
+- Inquiry CTA
+- Footer
+
+# Technical Rules
+- Use Next.js + TypeScript + Tailwind CSS
+- Prefer reusable components
+- Separate content/data from presentational components when practical
+- Keep components small and readable
+- Use semantic HTML
+- Consider accessibility: alt text, heading hierarchy, button labels, form labels
+- Keep SEO basics in mind: title, description, meaningful headings
+
+# Working Style
+- First propose a short implementation plan
+- Then list files to create or update
+- Then implement
+- After implementation, summarize changes clearly
+- When possible, suggest next logical step
+- Do not rewrite unrelated files
+- Do not introduce unnecessary libraries without reason
+
+# Quality Check Before Finishing
+- Check visual hierarchy
+- Check Korean copy tone
+- Check 50:50 business balance
+- Check mobile layout
+- Check inquiry CTA visibility
+- Check placeholders remain editable
+                </div>
+                <div class="success-message" id="message-0">복사됨!</div>
+            </div>
+
+            <!-- 항목 2 -->
+            <div class="item">
+                <div class="item-title">사이트 기본 틀</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(1)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(1)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-1">
+이 프로젝트는 2026년 설립 신생 교육기업의 공식 웹사이트다.
+
+핵심 사업 비중:
+- 첨단산업 교육 50%
+- 취업역량 강화 50%
+
+첨단산업 교육 분야:
+- 반도체
+- 디스플레이
+- AI
+- 이차전지
+
+취업역량 강화 분야:
+- 면접
+- 자소서
+- 이력서
+- AI 면접
+- 포트폴리오
+
+추가 서비스:
+- 강사진 공급
+- 강연 및 특강
+- 기업·기관 위탁교육
+- 교육 프로그램 기획 및 운영
+
+브랜드 톤:
+- 전문적
+- 정돈됨
+- 신뢰감
+- 교육기관 스타일
+- 화려함보다 가독성과 고주 우선
+
+작업 원칙:
+1. 먼저 구현 계획을 짧게 제시해줘.
+2. 생성/수정할 파일 목록을 먼저 알려줘.
+3. 그 다음 실제 구현해줘.
+4. 모든 UI 텍스트는 한국어로 작성해줘.
+5. [기업명]. [대표자명], [연락처], [이메일], [주소]는 placeholder로 유지해줘.
+6. Next.js + TypeScript + Tailwind 기준으로 작업해줘.
+7. 작업 후 변경 사항과 다음 추천 단계를 정리해줘.
+
+우선 전체 사이트의 기본 구조와 라우팅, 공통 레이아웃, 헤더, 푸터를 먼저 만들어줘.
+                </div>
+                <div class="success-message" id="message-1">복사됨!</div>
+            </div>
+
+            <!-- 항목 3 -->
+            <div class="item">
+                <div class="item-title">사이트 기본 구성</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(2)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(2)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-2">
+현재 프로젝트를 기준으로 아래 작업을 진행해줘.
+
+목표:
+- 교육 서비스 기업 사이트의 기본 뼈대 생성
+- 공통 레이아웃과 라우팅 구성
+- 추후 페이지 확장이 쉬운 구조로 정리
+
+필수 페이지:
+- /
+- /education
+- /career
+- /lectures
+- /corporate-training
+- /courses
+- /insights
+- /about
+- /contact
+
+요구사항:
+- app router 기준 구성
+- 공통 Header. Footer, Section 컴포넌트 작성
+- placeholder 데이터 구조 분리 가능하게 설계
+- 모든 페이지는 일단 기본 섹션 제목과 설명이 보이게 구성
+- Tailwind로 깔끔한 기본 스타일 적용
+
+먼저 구현 계획과 수정 파일 목록을 보여주고, 그 다음 실제 코드 작업을 진행해줘.
+                </div>
+                <div class="success-message" id="message-2">복사됨!</div>
+            </div>
+
+            <!-- 항목 4 -->
+            <div class="item">
+                <div class="item-title">홈 화면 완성도 높이기</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(3)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(3)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-3">
+홈 화면을 완성도 높게 구현해줘.
+
+필수 섹션:
+1. 히어로 배너
+2. 핵심 서비스 2열 요약
+3. 첨단산업 교육 섹션
+4. 취업역량 강화 섹션
+5. 강사진·위탁교육 소개
+6. 차별화 포인트
+7. 교육 운영 프로세스
+8. 문의 CTA
+
+조건:
+- 첨단산업 교육과 취업역량 강화의 비중이 균형 있게 보이게 할 것
+- 교육기관다운 신뢰감 있는 문체 사용
+- CTA는 과하지 않지만 분명하게 보이게 할 것
+- 모바일 반응형까지 교려
+- 섹션 간 여백 충분히 확보
+- 텍스트는 모두 한국어
+
+작업 전:
+- 어떤 컴포넌트를 만들지 먼저 설명
+- 수정 파일 목록 제시
+
+작업 후:
+- 변경 요약
+- 다음 추천 작업 2개 제안
+                </div>
+                <div class="success-message" id="message-3">복사됨!</div>
+            </div>
+
+            <!-- 항목 5 -->
+            <div class="item">
+                <div class="item-title">education 페이지</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(4)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(4)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-4">
+/education 페이지를 고도화해줘.
+반드시 포함할 분야:
+- 반도체
+- 디스플레이
+- AI
+- 이차전지
+
+각 분야에 포함할 항목:
+- 한 줄 소개
+- 교육 목적
+- 주요 주제
+- 추천 대상
+- 운영 형태
+- 문의 CTA
+
+구현 조건:
+- 카드형 또는 탭형 구조
+- 비교가 쉬운 UI
+- 교육기관답게 정돈된 스타일
+- 너무 긴 문장은 줄이고 핵심 중심으로 구성
+- 모바일에서 세로 스택 구조로 자연스럽게 전환
+
+먼저 UI 구조와 파일 수정 계획을 설명한 뒤 구현해줘.
+                </div>
+                <div class="success-message" id="message-4">복사됨!</div>
+            </div>
+
+            <!-- 항목 6 -->
+            <div class="item">
+                <div class="item-title">career 페이지</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(5)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(5)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-5">
+/career 페이지를 실전형으로 구현해줘.
+
+포함할 프로그램:
+- 면접
+- 자소서
+- 이력서
+- AI 면접
+- 포트폴리오
+
+각 프로그램에 포함할 요소:
+- 프로그램 소개
+- 기대 효과
+- 추천 대상
+- 운영 형태
+- 문의 버튼
+
+톤앤매너:
+- 합격 보장처럼 보이는 표현 금지
+- 실전적이지만 신뢰감 있는 표현 사용
+- 대학, 청년기관, 취업지원센터 담당자가 봐도 이해되도록 구성
+
+먼저 섹션 구조와 컴포넌트 구조를 보여주고 구현해줘.
+                </div>
+                <div class="success-message" id="message-5">복사됨!</div>
+            </div>
+
+            <!-- 항목 7 -->
+            <div class="item">
+                <div class="item-title">lectures와 corporate-training 페이지</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(6)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(6)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-6">
+/lectures와 /corporatr-training 페이지를 B2B 친화적으로 구현해줘.
+
+반드시 포함:
+- 강사진 공급 소개
+- 강연/특강 제공 분야
+- 기업·기관 맞춤형 위탁교육 소개
+- 운영 프로세스: 상담 → 설계 → 운영 → 피드백
+- CTA 또는 문의 연결 영역
+
+문체 조건:
+- 기관 담당자와 HRD 담당자가 읽기 쉬운 문장
+- 지나치게 캐주얼하지 않게
+- 제안서형 구조 느낌
+- 신생기업이지만 준비된 조직처럼 보이게 작성
+
+작업 전 계획을 보여주고 구현해줘.
+                </div>
+                <div class="success-message" id="message-6">복사됨!</div>
+            </div>
+
+            <!-- 항목 8 -->
+            <div class="item">
+                <div class="item-title">about 페이지</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(7)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(7)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-7">
+/about 페이지를 2026년 신생 교육기업 소개 페이지로 완성해줘.
+
+포함 항목:
+- 회사 한 줄 소개
+- 설립 배경
+- 비전
+- 미션
+- 핵심 가치 4개
+- 대표 인사말
+- 주요 사업영역
+- 향후 성장 방향
+- 협업 CTA
+
+주의사항:
+- [기업명], [대표자명] placeholder 유지
+- 과장된 연혁 금지
+- 진정성 있고 전문적인 어조
+- 첨단산업 교육과 취업역량 강화의 두 축이 모두 드러나야 함
+
+먼저 문안 구조를 제안하고, 그 뒤 구현해줘.
+                </div>
+                <div class="success-message" id="message-7">복사됨!</div>
+            </div>
+
+            <!-- 항목 9 -->
+            <div class="item">
+                <div class="item-title">contact 페이지</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(8)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(8)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-8">
+/contact 페이지를 문의 전환 중심으로 구현해줘.
+
+필수 요소:
+- 문의 유도 문구
+- 문의폼
+- 기본 연락 정보 placeholder
+- 자주 묻는 문의 예시
+- 기업/기관 문의와 개인 문의를 구분할 수 있는 항목
+
+문의폼 항목:
+- 이름
+- 소속 또는 기관명
+- 연락처
+- 이메일
+- 관심 분야
+- 문의 유형
+- 문의 내용
+
+구현 조건:
+- 모바일 입력 편의성 우선
+- label, placeholder, 버튼 문구 모두 한국어
+- 접근성 고려
+- 제출 버튼은 분명하지만 과하지 않게 디자인
+                </div>
+                <div class="success-message" id="message-8">복사됨!</div>
+            </div>
+
+            <!-- 항목 10 -->
+            <div class="item">
+                <div class="item-title">전체적인 완성도 높이기</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(9)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(9)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-9">
+지금까지 구현된 사이트를 기준으로 전체 리팩터링을 진행해줘.
+
+점검 기준:
+1. 컴포넌트 재사용성
+2. 폴더 구조 일관성
+3. 텍스트 톤의 통일성
+4. 교육기관다운 신뢰감
+5. 첨단산업 교육 vs 취업역량 강화의 50:50 균형
+6. 모바일 반응형 완성도
+7. CTA 배치 적절성
+8. 접근성
+9. 기본 SEO 구조
+10. placeholder 유지 여부
+
+요청 방식:
+- 먼저 문제점 요약
+- 그 다음 수정 우선순위 제시
+- 이후 실제 리팩터링 진행
+- 마지막에 수정된 파일과 변경 이유를 설명
+                </div>
+                <div class="success-message" id="message-9">복사됨!</div>
+            </div>
+
+            <!-- 항목 11 -->
+            <div class="item">
+                <div class="item-title">마감 품질 높이기</div>
+                <div class="item-header">
+                    <button class="view-btn" onclick="toggleText(10)">보기</button>
+                    <button class="copy-btn" onclick="copyToClipboard(10)">복사</button>
+                </div>
+                <div class="text-content hidden" id="text-10">
+현재 프로젝트를 기준으로 마감 품질을 높여줘.
+
+작업 항목:
+- 페이지별 title, meta description 정리
+- heading hierarchy 점검
+- 버튼 문구 일관성 점검
+- alt 텍스트 점검
+- 모바일 반응형 간격 정리
+- 푸터 정보 정리
+- 문의 CTA가 모든 핵심 페이지에 보이도록 보강
+
+출력 방식:
+1. 점검 항목 요약
+2. 수정 파일 목록
+3. 실제 수정
+4. 최종 QA 체크리스트
+                </div>
+                <div class="success-message" id="message-10">복사됨!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
